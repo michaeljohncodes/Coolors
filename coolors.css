@@ -1,0 +1,530 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    background-color: grey;
+    font-size: large;
+}
+.bluebotton{
+    background-color: rgb(43, 94, 214);
+    color: white;
+}
+
+/* this is the header section that carries the logo and navigation buttons */
+.header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid grey;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    padding: 0px 30px;
+}
+.logo{
+    /* background-color: black; */
+    padding: 10px;
+}
+.nav{
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul a{
+    text-decoration: none;
+    color: black;
+}
+.nav .bluebotton a{
+    color: white;
+}
+.nav .pinktext a{
+    color:rgb(240, 92, 116);
+}
+.nav .cta1{
+    background-color: white;
+}
+.nav .cta1 ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+}
+.nav .cta1 ul li{
+    padding:0px 10px;
+}
+.nav .cta1 .pinktext{
+    color:rgb(240, 92, 116);
+}
+
+.nav .cta2{
+    background-color: white;
+    border-left: 1px solid grey;
+}
+.nav .cta2 ul{
+    display: flex;
+    list-style: none;
+}
+.nav .cta2 ul li{
+    padding:10px 20px;
+    border-radius: 10px;
+
+}
+/* the header section ends here */
+
+/* the hero section starts here */
+.hero{
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content:center;
+    padding: 70px 50px;
+}
+.hero_text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.hero_text h1{
+    width: 70%;
+    text-align: center;
+    font-size: 80px;
+    margin: 5px 0px;
+}
+.hero_text p{
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    margin:20px 0px;
+}
+.hero_text button{
+    width:300px;
+    padding: 20px;
+    border-style: none;
+    border-radius:15px;
+}
+
+.hero_award img{
+    width:10%;
+}
+.hero_award button{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: left;
+    border: 1px solid red;
+    color: red;
+    background-color: white;
+}
+
+
+.hero_image{
+    /* background-color: red; */
+    position: relative;
+    width: 60%;
+}
+.hero_image_bigscreen{
+    /* position: absolute; */
+    background-image:url(./Assets/Colorbars.jpg);
+    background-size:cover; 
+    float: right;
+    overflow:hidden;
+    border: 10px solid black;
+    width: 900px;
+    height: 600px;
+    border-radius: 20px;
+}
+.hero_image_smallscreen{
+    background-image:url(./Assets/Colorbars.jpg);
+    background-size: cover; 
+    position: absolute;
+    bottom:0;
+    left:0px;
+    overflow: hidden;
+    border: 10px solid black;
+    width: 450px;
+    height: 320px;
+    border-radius: 20px;
+}
+
+/* The hero section ends here */
+/* The rollover boxes section starts here */
+
+.rollovercontainer{
+    background-color: rgb(242, 241, 241);
+    padding: 0px 20px;
+}
+/* .rollovercontainer img{
+    width: 20%;
+    margin: 20px 0px;
+} */
+.rolloverboxes{
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows:1fr;
+    grid-template-areas:"b1" "b2" "b3" "b4" "b5";
+}
+.rolloverboxes h1{
+    font-size: 30px;
+}
+.rolloverboxes p{
+    font-size: 20px;
+    width: 70%;
+    margin: 5px 0px 30px;
+}
+.box1{
+    grid-area: b1;
+    background-color: white;
+    border: 4px solid rgb(206, 206, 206);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    height:fit-content;
+    width: 300px;
+}
+.box1 img{
+    width: 20%;
+    margin: 20px 0px;
+    /* height: fit-content; */
+}
+
+.box2{
+    grid-area: b2;
+    background-color: white;
+    border: 4px solid rgb(206, 206, 206);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    height:fit-content;
+    width:300px;
+}
+.box2 img{
+    width: 20%;
+    margin: 20px 0px;
+    /* height: fit-content; */
+}
+
+.box3{
+    grid-area: b3;
+    background-color: white;
+    border: 4px solid rgb(206, 206, 206);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    height:fit-content;
+    width: 300px;
+}
+.box3 img{
+    width: 20%;
+    margin: 20px 0px;
+    /* height: fit-content; */
+}
+
+.box4{
+    grid-area: b4;
+    background-color: white;
+    border: 4px solid rgb(206, 206, 206);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    height:fit-content;
+    width: 300px;
+}
+.box4 img{
+    width: 20%;
+    margin: 20px 0px;
+    /* height: fit-content; */
+}
+
+.box5{
+    grid-area: b5;
+    background-color: white;
+    border: 4px solid rgb(206, 206, 206);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    height:fit-content;
+    width: 300px;
+}
+.box5 img{
+    width: 20%;
+    margin: 20px 0px;
+    /* height: fit-content; */
+}
+
+/* the rollover boxes section ends here */
+/* the partners icons section starts here */
+
+.partnerscontainer{
+    background-color: white;
+    padding: 50px 50px 20px;
+    margin-inline: auto;
+    text-align: center;
+}
+.partners{
+    display: flex;
+    /* gap:10px; */
+    align-items: center;
+    justify-content:space-evenly;
+    /* text-align: center; */
+    width:70%;
+    margin-inline: auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.partners img{
+    width: 40%;
+}
+
+/* the partners icons section stops here */
+
+/* the footer section starts here */
+
+.footer{
+    background-color: rgb(241, 239, 239);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    padding: 10px 0px 30px;
+}
+.footer h1{
+    padding: 40px 0px 20px;
+    font-size: 30px;
+}
+.footer p{
+    padding: 10px 0px;
+    font-size: 20px;
+}
+
+
+
+/* the responsiveness section begins here */
+
+@media only screen and (max-width: 800px) {
+
+    .header{
+        justify-content:space-evenly;
+        align-items: center;
+        padding: 5px 0px;
+    }
+
+    .hero{
+        width: 100%;
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 0px;
+    }
+
+    .hero_text{
+        margin: 50px 0px 0px;
+        width: 70%;
+    }
+    .hero_text h1{
+        width:100%;
+        font-size: 40px;
+        margin: 5px 0px;
+    }
+    .hero_text p{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        margin:20px 0px;
+    }
+    .hero_text button{
+        width:300px;
+        padding: 20px;
+        border-style: none;
+        border-radius:15px;
+    }
+    
+    .hero_award img{
+        width:10%;
+    }
+    .hero_award button{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        text-align: left;
+        border: 1px solid red;
+        color: red;
+        background-color: white;
+    }
+
+    .hero_image{
+        /* background-color: red; */
+        width:80%;
+        height: fit-content;
+        position: relative;
+        padding: 40px 10px;
+    }
+    .hero_image_bigscreen{
+        /* position: absolute; */
+        background-image:url(./Assets/Colorbars.jpg);
+        background-size:cover; 
+        float: right;
+        overflow:hidden;
+        border: 10px solid black;
+        width: 500px;
+        height: 320px;
+        border-radius: 10px;
+    }
+    .hero_image_smallscreen{
+        background-image:url(./Assets/Colorbars.jpg);
+        background-size: cover; 
+        position: absolute;
+        bottom:0;
+        left:0;
+        overflow: hidden;
+        border: 10px solid black;
+        width: 250px;
+        height: 180px;
+        border-radius: 10px;
+    }
+
+    .rollovercontainer{
+        padding: 30px 0px;
+        /* width: 100%; */
+    }
+    .rolloverboxes{
+        /* background-color: red; */
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+        height:fit-content;
+        width:100%;
+    } 
+    .rolloverboxes h1{
+        font-size: 20px;
+    }
+    .rolloverboxes p{
+        font-size: 20px;
+        width: 80%;
+        margin: 5px 0px 30px;
+    }
+
+    .box1{
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0px;
+        height:200px;
+        width:200px;
+    }
+    .box1 img{
+        margin: 10px 0px;
+    }
+    
+    .box2{
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0px;
+        height:200px;
+        width:200px;
+    }
+    .box2 img{
+        margin: 10px 0px;
+    }
+    
+    .box3{
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0px;
+        height:200px;
+        width:200px;
+    }
+    .box3 img{
+        margin: 10px 0px;
+        width: 30%;
+    }
+    
+    .box4{
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0px;
+        height:200px;
+        width:200px;
+    }
+    .box4 img{
+        margin: 10px 0px;
+    }
+    
+    .box5{
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0px;
+        height:200px;
+        width:200px;
+    }
+    .box5 img{
+        margin: 10px 0px;
+    }
+
+
+    .partnerscontainer{
+        /* background-color: rgb(156, 154, 154); */
+        /* padding: 50px 0px 20px; */
+        height: fit-content;
+        width: 100%;
+        margin: 0;
+    }
+    .partners{
+        /* background-color: aquamarine; */
+        padding: 30px 0px;
+        width: 80%;
+    }
+    .partners img{
+        width: 50%;
+    }
+
+
+    .footer{
+        background-color: rgb(241, 239, 239);
+        display:flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        width: 100%;
+        padding: 50px 100px;
+    }
+}
+
+/* @media only screen and (max-width: 1024px ){
+
+} */
