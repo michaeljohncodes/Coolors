@@ -108,6 +108,7 @@ body{
     padding: 20px;
     border-style: none;
     border-radius:15px;
+    cursor: pointer;
 }
 
 .hero_award img{
@@ -145,7 +146,7 @@ body{
     background-size: cover; 
     position: absolute;
     bottom:0;
-    left:0px;
+    left:50px;
     overflow: hidden;
     border: 10px solid black;
     width: 450px;
@@ -159,11 +160,8 @@ body{
 .rollovercontainer{
     background-color: rgb(242, 241, 241);
     padding: 0px 20px;
+    height:fit-content;
 }
-/* .rollovercontainer img{
-    width: 20%;
-    margin: 20px 0px;
-} */
 .rolloverboxes{
     display:flex;
     gap: 20px;
@@ -174,6 +172,7 @@ body{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows:1fr;
     grid-template-areas:"b1" "b2" "b3" "b4" "b5";
+    flex-wrap: wrap;
 }
 .rolloverboxes h1{
     font-size: 30px;
@@ -182,6 +181,10 @@ body{
     font-size: 20px;
     width: 70%;
     margin: 5px 0px 30px;
+}
+.rolloverboxes a{
+    text-decoration: none;
+    color: black;
 }
 .box1{
     grid-area: b1;
@@ -196,13 +199,13 @@ body{
     padding: 40px 0px;
     height:fit-content;
     width: 300px;
+    text-align: center;
 }
 .box1 img{
     width: 20%;
     margin: 20px 0px;
     /* height: fit-content; */
 }
-
 .box2{
     grid-area: b2;
     background-color: white;
@@ -293,17 +296,18 @@ body{
     text-align: center;
 }
 .partners{
-    /* background-color: red; */
     display: flex;
-    /* gap: 5px; */
+    /* gap:10px; */
     align-items: center;
-    justify-content:space-between;
+    justify-content:space-evenly;
+    /* text-align: center; */
+    width:70%;
     margin-inline: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 70px;
 }
 .partners img{
-    width: 30%;
+    width: 40%;
 }
 
 /* the partners icons section stops here */
@@ -340,7 +344,7 @@ body{
 
     .hero{
         width: 100%;
-        /* background-color: yellow; */
+        background-color: yellow;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -384,7 +388,7 @@ body{
     }
 
     .hero_image{
-        /* background-color: red; */
+        background-color: red;
         width:80%;
         height: fit-content;
         position: relative;
@@ -498,23 +502,19 @@ body{
 
 
     .partnerscontainer{
-        background-color: white;
-        padding: 50px 50px 20px;
-        margin-inline: auto;
-        text-align: center;
+        /* background-color: rgb(156, 154, 154); */
+        /* padding: 50px 0px 20px; */
+        height: fit-content;
+        width: 100%;
+        margin: 0;
     }
     .partners{
-        display: flex;
-        /* gap:10px; */
-        align-items: center;
-        justify-content:space-evenly;
-        width: 10px;
-        margin-inline: auto;
-        margin-top: 50px;
-        margin-bottom: 70px;
+        /* background-color: aquamarine; */
+        padding: 30px 0px;
+        width: 80%;
     }
     .partners img{
-        width: 40%;
+        width: 50%;
     }
 
 
